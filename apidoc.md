@@ -7,7 +7,7 @@ List of available endpoints:
 - `POST /band`
 - `GET /band`
 - `POST /band/member`
-- `GET /band/:band_id'`
+- `GET /band/:band_id`
 
 
 ## 1. POST /band
@@ -118,6 +118,12 @@ OR
     "message": "Member Position Cant be Empty!"
 }
 ```
+OR
+```json
+{
+    "message": "Maximum Member Limit Exceeded"
+}
+```
 
 
 _Response (404 - Not Found)_
@@ -138,7 +144,7 @@ Request:
 
 ```json
 {
-    "id" :"integer",
+    "band_id" :"integer",
 }
 ```
 
