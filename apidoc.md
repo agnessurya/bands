@@ -184,12 +184,16 @@ _Response (500 - Internal Server Error)_
 
 
 ## Running
-- Drop db : `npx sequelizedb:drop`
+- cd server
+- npm install
+- Drop db : `npx sequelize db:drop`
 - Create db : `npx sequelize db:create`
 - Migrate db : `npx sequelize db:migrate`
 - Run Test : `npm run dev`
 
 ## Testing
+- cd server
+- npm install
 - Drop db testing: `npx sequelize --env test db:drop`
 - Create db testing: `npx sequelize --env test db:create`
 - Migrate db testing: `npx sequelize --env test db:migrate`
