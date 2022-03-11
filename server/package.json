@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest  --watchAll --detectOpenHandles --forceExit  --runInBand --verbose",
+    "dev": "npx nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jest": "^27.5.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0",
+    "supertest": "^6.2.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  }
+}
